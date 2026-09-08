@@ -1,7 +1,10 @@
 package infr.pi.eventos.controllers;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+
+import infr.pi.eventos.models.Evento;
 
 @Controller
 public class EventosController {
@@ -10,4 +13,12 @@ public class EventosController {
 	public String form() {
 		return "formEvento";
 	}
+	@PostMapping("/eventos")
+	public String adcionar(Evento evento) {
+		
+		System.out.println(evento);
+		
+		return"evento-adcionado";
+	}
+	
 }
