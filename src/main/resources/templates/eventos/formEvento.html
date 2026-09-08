@@ -4,35 +4,36 @@
 <meta charset="UTF-8">
 <title>Eventos</title>
 <!-- Compiled and minified CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 </head>
 <body>
 
-<div th:replace="~{menu :: menu}"></div>
+	<div th:replace="~{menu :: menu}"></div>
 
-<div class="container">
+	<div class="container">
 
-<h1>Adcionar Evento</h1>
-<form action="/eventos" method="post">
-	<div>
-		<label>Nome:</label><input type="text" name="nome">
-	</div>
-	<div>
-		<label>Data:</label><input type="text" name="data">
-	</div>
-	<div>
-		<label>Local:</label><input type="text" name="local">
-	</div>
-	<div>
-		<label>Horário:</label><input type="text" name="horario">
-	</div>
-	<div>
-		<button class="waves-effect waves-light btn" type="submit">Salvar</button>
-		<button class="waves-effect waves-light btn" type="reset">Limpar</button>
-	</div>
-	
-</form>
+		<h1>Adcionar Evento</h1>
+		<form action="/eventos" method="post">
+			<div>
+				<label>Nome:</label><input type="text" name="nome">
+			</div>
+			<div>
+				<label>Data:</label><input type="text" name="data">
+			</div>
+			<div>
+				<label>Local:</label><input type="text" name="local">
+			</div>
+			<div>
+				<label>Horário:</label><input type="text" name="horario">
+			</div>
+			<div>
+				<button class="waves-effect waves-light btn" type="submit">Salvar</button>
+				<button class="waves-effect waves-light btn" type="reset">Limpar</button>
+			</div>
 
-</div>
+		</form>
+
+	</div>
 </body>
-</html> 
+</html>
